@@ -1,4 +1,4 @@
-##🕒 Digital Clock
+# 🕒 Digital Clock
 
 A simple, elegant, and fully responsive **digital clock** built using pure **HTML**, **CSS**, and **JavaScript**. This project offers a live, real-time clock that updates every second — perfect for learning DOM manipulation, styling, and working with JavaScript’s `Date` object.
 
@@ -115,7 +115,7 @@ Feel free to use, modify, and distribute — just give credit!
 
 ---
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 
 This project is a personal learning tool, but inspired by various creative clocks on GitHub and CodePen.
 
