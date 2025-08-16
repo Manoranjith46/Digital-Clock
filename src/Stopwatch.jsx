@@ -42,7 +42,7 @@ function Stopwatch() {
           <div className="btns ">
             {isActive ? (<button className="btn btn-primary mx-2" onClick={stopTimer}>Stop</button>)
               :
-              (<button className="btn btn-primary mx-2" onClick={startTimer}>Start</button>)}
+              (<button className=" button btn btn-primary mx-2" onClick={startTimer}>Start</button>)}
             <button className="btn btn-secondary mx-2" onClick={resetTimer}>Reset</button>
           </div>
         </div>
