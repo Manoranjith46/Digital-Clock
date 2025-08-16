@@ -1,22 +1,24 @@
-import './App.css'
+import Clock from './clock'
+import Stopwatch from './Stopwatch'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
-
+  document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+      e.preventDefault();
+    }
+  });
 
   return (
-    <>
-      <div className="clock-container">
-        <div className="clock-wrapper">
-          <h1 style={{ fontSize: '2em' }}>Digital Clock</h1>
-          <div className="timer">
-            <span className="hour">00</span>:
-            <span className="minute">00</span>:
-            <span className="second">00</span>
-          </div>  
-        </div>        
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Clock />} />
+      <Route path="/digitalclock" element={<Clock />} />
+      <Route path="/stopwatch" element={<Stopwatch />} />
+    </Routes>
   )
 }
 
