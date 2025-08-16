@@ -67,24 +67,127 @@ body {
   color: black;
   text-shadow: 4px 4px 4px rgba(228, 218, 218, 0.5);
 }
+/* Responsive styles for the navbar and clock wrapper */
+/* Media queries for different screen sizes */
 
+/* Extra-small phones (≤426px) */
 @media screen and (max-width: 426px) {
-  .nav-container{
+  .navbar { height: 28%; }
+  .nav-container {
+    padding: 1rem 1.25em 0.5em 1.25em;
     font-size: 1em;
-    font-weight: bolder;
+    font-weight: 800;
     gap: 3.5vw;
   }
   .clock-wrapper {
     margin: 2vh 2vh 2vh 0.5vh;
-    padding: 2vh 0vh;
-    font-size: 1.5em;
-    backdrop-filter: blur(1px);
-    justify-content: center;
-    top: 45%;
+    padding: 2vh 0;
     width: 100%;
-    height: fit-content;
+    font-size: 1.5em;
+    top: 40%;
     color: black;
-    font-family:'Times New Roman';
     text-shadow: 2px 2px 4px rgba(228, 218, 218, 0.5);
+  }
+}
+
+/* Small phones / large mobiles (≤600px) */
+@media screen and (min-width: 427px) and (max-width: 600px) {
+  .navbar { height: 32%; }
+  .nav-container {
+    padding: 1.25rem 1.25em 0.5em 1.25em;
+    gap: 3vw;
+    font-size: 0.95em;
+  }
+  .clock-wrapper {
+    top: 42%;
+    padding: 2vh 1vh;
+    font-size: 1.4em;
+    width: 100%;
+  }
+}
+
+/* Tablets (≤768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .navbar { height: 30%; }
+  .nav-container {
+    padding: 1.5rem 1.5em 0.6em 1.5em;
+    gap: 4vw;
+    font-size: 1.05em;
+  }
+  .clock-wrapper {
+    width: 75%;
+    font-size: 1.6em;
+    top: 40%;
+    padding: 2.5vh 1vh;
+  }
+}
+
+/* Small laptops and large tablets (≤1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .nav-container {
+    padding: 1.75rem 1.75em 0.7em 1.75em;
+    gap: 5vw;
+    font-size: 1.15em;
+  }
+  .clock-wrapper {
+    width: 55%;
+    font-size: 1.8em;
+    top: 40%;
+  }
+}
+
+/* Typical desktop (≤1366px) */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .nav-container {
+    padding: 2rem 2.25em 0.75em 2.25em;
+    gap: 5.5vw;
+    font-size: x-large;
+  }
+  .clock-wrapper {
+    width: 40%;
+    font-size: 2.05em;
+    top: 45%;
+  }
+}
+
+/* Mid-large desktops (1367px — 1599px) */
+@media screen and (min-width: 1367px) and (max-width: 1599px) {
+  .nav-container {
+    padding: 2.25rem 2.75em 0.9rem 2.75em;
+    gap: 6vw;
+    font-size: 1.25em;
+  }
+  .clock-wrapper {
+    width: 32%;
+    font-size: 2.2em;
+    top: 45%;
+  }
+}
+
+/* Large desktops (≥1600px) */
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  .nav-container {
+    padding: 2.5rem 3.5em 1rem 3.5em;
+    gap: 7vw;
+    font-size: 1.4em;
+  }
+  .clock-wrapper {
+    width: 28%;
+    font-size: 2.4em;
+    top: 46%;
+  }
+}
+
+/* Extra large desktops (≥1920px) */
+@media screen and (min-width: 1920px) {
+  .nav-container {
+    padding: 3rem 4em 1.5rem 4em;
+    gap: 8vw;
+    font-size: 1.6em;
+  }
+  .clock-wrapper {
+    width: 25%;
+    font-size: 2.6em;
+    top: 47%;
   }
 }
